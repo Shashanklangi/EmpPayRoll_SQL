@@ -18,3 +18,9 @@ INSERT INTO Employee_Pay_Roll VALUES('Hulk', 9600, '2022-01-15')
 SELECT * FROM Employee_Pay_Roll
 
 SELECT salary FROM Employee_Pay_Roll WHERE NAME = 'Jaden'
+
+ALTER TABLE Employee_Pay_Roll
+ADD Gender VARCHAR(8)
+UPDATE Employee_Pay_Roll SET Gender = 'FEMALE' WHERE NAME = 'Captain'
+UPDATE Employee_Pay_Roll SET Gender = 'MALE' WHERE NAME = 'Jonny' or NAME = 'Jaden' or NAME = 'Hulk'
+
