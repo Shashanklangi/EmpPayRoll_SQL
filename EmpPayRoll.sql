@@ -24,3 +24,18 @@ ADD Gender VARCHAR(8)
 UPDATE Employee_Pay_Roll SET Gender = 'FEMALE' WHERE NAME = 'Captain'
 UPDATE Employee_Pay_Roll SET Gender = 'MALE' WHERE NAME = 'Jonny' or NAME = 'Jaden' or NAME = 'Hulk'
 
+SELECT SUM(salary) FROM Employee_Pay_Roll WHERE Gender = 'FEMALE' GROUP BY Gender;
+SELECT SUM(salary) FROM Employee_Pay_Roll WHERE Gender = 'MALE' GROUP BY Gender;
+
+SELECT AVG(salary) FROM Employee_Pay_Roll WHERE Gender = 'FEMALE' GROUP BY Gender;
+SELECT AVG(salary) FROM Employee_Pay_Roll WHERE Gender = 'MALE' GROUP BY Gender;
+
+SELECT MIN(salary) FROM Employee_Pay_Roll WHERE Gender = 'FEMALE' GROUP BY Gender;
+SELECT MIN(salary) FROM Employee_Pay_Roll WHERE Gender = 'MALE' GROUP BY Gender;
+
+SELECT MAX(salary) FROM Employee_Pay_Roll WHERE Gender = 'FEMALE' GROUP BY Gender;
+SELECT MAX(salary) FROM Employee_Pay_Roll WHERE Gender = 'MALE' GROUP BY Gender;
+
+SELECT COUNT(salary) FROM Employee_Pay_Roll WHERE Gender = 'FEMALE' GROUP BY Gender;
+SELECT COUNT(salary) FROM Employee_Pay_Roll WHERE Gender = 'MALE' GROUP BY Gender;
+
