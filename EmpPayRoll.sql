@@ -9,3 +9,8 @@ CREATE TABLE Employee_Pay_Roll
 	salary INT,
 	StartDate DATE
 );
+
+INSERT INTO Employee_Pay_Roll VALUES('Jonny', 7500, '2021-10-03')
+INSERT INTO Employee_Pay_Roll VALUES('Jaden', 5500, '2022-02-22')
+INSERT INTO Employee_Pay_Roll VALUES('Captain', 2000, '2021-12-10')
+INSERT INTO Employee_Pay_Roll VALUES('Hulk', 9600, '2022-01-15')
