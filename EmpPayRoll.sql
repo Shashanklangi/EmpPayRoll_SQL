@@ -16,3 +16,5 @@ INSERT INTO Employee_Pay_Roll VALUES('Captain', 2000, '2021-12-10')
 INSERT INTO Employee_Pay_Roll VALUES('Hulk', 9600, '2022-01-15')
 
 SELECT * FROM Employee_Pay_Roll
+
+SELECT salary FROM Employee_Pay_Roll WHERE NAME = 'Jaden'
