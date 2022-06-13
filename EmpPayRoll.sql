@@ -39,3 +39,18 @@ SELECT MAX(salary) FROM Employee_Pay_Roll WHERE Gender = 'MALE' GROUP BY Gender;
 SELECT COUNT(salary) FROM Employee_Pay_Roll WHERE Gender = 'FEMALE' GROUP BY Gender;
 SELECT COUNT(salary) FROM Employee_Pay_Roll WHERE Gender = 'MALE' GROUP BY Gender;
 
+ALTER TABLE Employee_Pay_Roll
+ADD PhoneNumber BIGINT, Address VARCHAR(100), Department VARCHAR(30)
+
+UPDATE Employee_Pay_Roll SET Address = 'Miami'WHERE NAME in ('Captian')
+UPDATE Employee_Pay_Roll SET Address = 'Florida'WHERE NAME in ('Jaden')
+UPDATE Employee_Pay_Roll SET Address = 'Texas'WHERE NAME in ('Jonny')
+UPDATE Employee_Pay_Roll SET Address = 'Ohio'WHERE NAME in ('Hulk')
+UPDATE Employee_Pay_Roll SET Department = 'Counsellor' WHERE NAME in ('Captain');
+UPDATE Employee_Pay_Roll SET Department = 'Asistant Manager' WHERE NAME in ('Hulk');
+UPDATE Employee_Pay_Roll SET Department = 'CEO' WHERE NAME in ('Jonny');
+UPDATE Employee_Pay_Roll SET Department = 'Manager' WHERE NAME in ('Jaden');
+UPDATE Employee_Pay_Roll SET PhoneNumber = 1236589632 WHERE NAME = 'Jonny';
+UPDATE Employee_Pay_Roll SET PhoneNumber = 9652352148 WHERE NAME = 'Jaden';
+UPDATE Employee_Pay_Roll SET PhoneNumber = 5489623541 WHERE NAME = 'Captain';
+UPDATE Employee_Pay_Roll SET PhoneNumber = 8521463597 WHERE NAME = 'Hulk';
