@@ -39,6 +39,7 @@ SELECT MAX(salary) FROM Employee_Pay_Roll WHERE Gender = 'MALE' GROUP BY Gender;
 SELECT COUNT(salary) FROM Employee_Pay_Roll WHERE Gender = 'FEMALE' GROUP BY Gender;
 SELECT COUNT(salary) FROM Employee_Pay_Roll WHERE Gender = 'MALE' GROUP BY Gender;
 
+SELECT * FROM Employee_Pay_Roll
 ALTER TABLE Employee_Pay_Roll
 ADD PhoneNumber BIGINT, Address VARCHAR(100), Department VARCHAR(30)
 
@@ -54,3 +55,7 @@ UPDATE Employee_Pay_Roll SET PhoneNumber = 1236589632 WHERE NAME = 'Jonny';
 UPDATE Employee_Pay_Roll SET PhoneNumber = 9652352148 WHERE NAME = 'Jaden';
 UPDATE Employee_Pay_Roll SET PhoneNumber = 5489623541 WHERE NAME = 'Captain';
 UPDATE Employee_Pay_Roll SET PhoneNumber = 8521463597 WHERE NAME = 'Hulk';
+
+SELECT * FROM Employee_Pay_Roll
+ALTER TABLE Employee_Pay_Roll
+ADD BasicPay BIGINT, Deduction BIGINT, Taxable BIGINT, IncomeTax BIGINT, NetPay BIGINT
