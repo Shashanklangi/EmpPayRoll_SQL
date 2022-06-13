@@ -59,3 +59,8 @@ UPDATE Employee_Pay_Roll SET PhoneNumber = 8521463597 WHERE NAME = 'Hulk';
 SELECT * FROM Employee_Pay_Roll
 ALTER TABLE Employee_Pay_Roll
 ADD BasicPay BIGINT, Deduction BIGINT, Taxable BIGINT, IncomeTax BIGINT, NetPay BIGINT
+
+INSERT INTO Employee_Pay_Roll(Name, BasicPay, StartDate, Gender)
+VALUES('Terrisa', 7000, '2018-12-02', 'FEMAILE')
+UPDATE Employee_Pay_Roll SET Department = 'Sales' WHERE Name = 'Terrisa'
+INSERT INTO Employee_Pay_Roll (Name, Department) VALUES ('Terrisa', 'Marketing')
