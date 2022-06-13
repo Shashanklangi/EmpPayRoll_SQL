@@ -65,25 +65,25 @@ VALUES('Terrisa', 7000, '2018-12-02', 'FEMAILE')
 UPDATE Employee_Pay_Roll SET Department = 'Sales' WHERE Name = 'Terrisa'
 INSERT INTO Employee_Pay_Roll (Name, Department) VALUES ('Terrisa', 'Marketing')
 
-create Table Company
+CREATE TABLE Company
 (
-ID	int,
-CompanyName	varchar(255),
-constraint Company_foreign_Key_EmpID foreign key(ID) references Employee_Pay_Roll(ID) on delete cascade
+ID	INT,
+CompanyName	VARCHAR(255),
+CONSTRAINT Company_foreign_Key_EmpID FOREIGN KEY(ID) REFERENCES Employee_Pay_Roll(ID) ON DELETE CASCADE
 )
-create Table Payrollofemployee
+CREATE TABLE Payrollofemployee
 (
-ID		int,
-BasicPay	int,
-Deduction	int,
-TaxablePay	int,
-IncomeTax	int,
-NetPay		int
-constraint Payrollofemployee_foreign_Key_ID foreign key(ID) references Employee_Pay_Roll(ID) on delete cascade
+ID		INT,
+BasicPay	INT,
+Deduction	INT,
+TaxablePay	INT,
+IncomeTax	INT,
+NetPay		INT
+CONSTRAINT Payrollofemployee_foreign_Key_ID FOREIGN KEY(ID) REFERENCES Employee_Pay_Roll(ID) ON DELETE CASCADE
 )
-create table Departmenttable
+CREATE TABLE Departmenttable
 (
-Id int,
-Department varchar (20)
-constraint Departmenttable_foreign_Key_ID foreign key(ID) references Employee_Pay_Roll(ID) on delete cascade
+Id INT,
+Department VARCHAR (20)
+CONSTRAINT Departmenttable_foreign_Key_ID FOREIGN KEY(ID) REFERENCES Employee_Pay_Roll(ID) ON DELETE CASCADE
 );
